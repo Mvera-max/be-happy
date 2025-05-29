@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #fef9f6;
+  color: #333;
+  padding: 2rem;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Opening section */
+#opening-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#opening-section h1 {
+  font-size: 2rem;
+  color: #ff6b9f;
+  margin-bottom: 1rem;
+}
+
+#opening-section p {
+  margin-bottom: 0.8rem;
+  color: #444;
+}
+
+#intro-button {
+  background-color: #ffc0cb;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+#intro-button:hover {
+  background-color: #ff92b2;
+}
+
+/* Tamara section */
+#tamara-section {
+  width:100%;
+  height: 96vh;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  display: none;
+}
+
+#tamara {
+  width: 30%;
+  height: 20em;
+  height: 20em;
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 1rem;
+}
+
+/* Chat container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  padding-right: 8px;
+  scroll-behavior: smooth;
+}
+
+/* Message bubbles */
+.message {
+  display: flex;
+  max-width: 80%;
+  padding: 0.8rem 1rem;
+  border-radius: 20px;
+  position: relative;
+}
+
+.message-content {
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message.received .message-content {
+  background-color: #ffe8f1;
+  align-self: flex-start;
+  color: #444;
+}
+
+.message.sent {
+  align-self: flex-end;
+}
+
+.message.sent .message-content {
+  background-color: #d1ecff;
+  color: #333;
+}
+
+/* Input field */
+.input-field {
+  display: flex;
+  margin-top: 1rem;
+  background-color: #f4f4f4;
+  padding: 0.6rem;
+  border-radius: 15px;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.input-field input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+
+.input-field .icon {
+  font-size: 1.3rem;
+  color: #ff6b9f;
+  cursor: pointer;
+  padding-left: 0.8rem;
+  transition: transform 0.2s ease;
+}
+
+.input-field .icon:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  #tamara-section {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+
+  #tamara {
+    width: 100%;
+    height: auto;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+ 
+}

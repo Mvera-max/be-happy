@@ -1,0 +1,22 @@
+    :root {
+  --whitish-yellow:#FFF8F0;
+  --main-bg: #fef6e4;
+  --accent: #f582ae;
+  --soft-blue: #8ecae6;
+  --calm-green: #b7e4c7;
+  --vibrant-purple: #9b5de5;
+  --cool-gray: #adb5bd;
+  --dark-bg: #313152;
+  --text-light: #ffffff;
+  --text-dark: #1e1e1e;
+
+ --sunset-gradient: linear-gradient(to right, #ff758c, #ff7eb3);
+--aqua-gradient: linear-gradient(to right, #43e97b, #38f9d7);
+--night-gradient: linear-gradient(to right, #292929, #000000);
+--vibe-purple: linear-gradient(to right, #9b5de5, #f15bb5);
+--sky-gradient: linear-gradient(to right, #a1c4fd, #c2e9fb);
+--ocean-breeze: linear-gradient(to bottom, #00c6ff, #0072ff);
+--cyberpunk-feel:  linear-gradient(to right, #000428, #004e92);
+--cool-dark:  linear-gradient(to right, #141E30, #243B55);
+--box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
