@@ -108,8 +108,7 @@ icon.addEventListener('click',()=>{
   tamaraWords(input.value, true)
   timeOut= setTimeout(()=>{
     response();
-    input.value=``
-    input.focus();
+    input.value=``;
   },500)
 })
 
